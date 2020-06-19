@@ -1,10 +1,15 @@
 import React from 'react';
 // eslint-disable-next-line
 import Button from './Button';
+import Display from './Display';
 
 function ButtonPanel() {
   return (
     <div className="button-panel">
+      <div className="row">
+        <Display />
+      </div>
+
       <div className="row">
         <Button>AC</Button>
         <Button>+/-</Button>

@@ -1,12 +1,24 @@
-.board{
-  margin-top: 3%;
-  margin-left: 30%;
-  margin-right: 30%;
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .display{
-  border: 1px solid grey;
-  height: 100px;
+  display: flex;
+  height: 4em;
+  flex: 1;
+  background: #000;
+  outline: 1px solid #888;
+  color: white;
+  justify-content: flex-end;
+  padding: 0.5em;
+  font-size: 1.4em;
+  font-weight: bold;
+  align-items: center;
 }
 
 .button-panel{
