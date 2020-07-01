@@ -1,15 +1,11 @@
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
   margin-top: 50px;
 }
 
 .display{
   display: flex;
   height: 4em;
+  width: 385px;
   flex: 1;
   background: grey;
   outline: 1px solid #888;

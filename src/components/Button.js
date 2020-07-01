@@ -5,21 +5,21 @@ class Button extends React.Component {
   isOperator = value => !Number.isNaN(Number(value)) || value === 'AC' || value === '+/-' || value === '%' || value === '.' || value === 'C'
 
   render() {
-    const { children } = this.props;
+    const { name } = this.props;
 
     let buttonClasses = 'btn btn-outline-secondary button ';
-    buttonClasses += this.isOperator(children) ? '' : 'operator';
+    buttonClasses += this.isOperator(name) ? '' : 'operator';
 
     return (
       <button type="button" className={buttonClasses}>
-        { children }
+        { name }
       </button>
     );
   }
 }
 
 Button.propTypes = {
-  children: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default Button;
