@@ -7,10 +7,6 @@ function ButtonPanel() {
   return (
     <div className="button-panel">
       <div className="row">
-        <Display />
-      </div>
-
-      <div className="row">
         <Button>AC</Button>
         <Button>+/-</Button>
         <Button>%</Button>

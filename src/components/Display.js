@@ -1,11 +1,5 @@
 import React from 'react';
 
-function Display() {
-  return (
-    <div className="display">
-      Results
-    </div>
-  );
-}
+const Display = () => <div>0</div>;
 
 export default Display;

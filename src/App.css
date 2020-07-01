@@ -11,7 +11,7 @@
   display: flex;
   height: 4em;
   flex: 1;
-  background: #000;
+  background: grey;
   outline: 1px solid #888;
   color: white;
   justify-content: flex-end;
@@ -19,6 +19,7 @@
   font-size: 1.4em;
   font-weight: bold;
   align-items: center;
+  border: none;
 }
 
 .button-panel{
