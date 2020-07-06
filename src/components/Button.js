@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Button extends React.Component {
-  isOperator = value => !Number.isNaN(Number(value)) || value === 'AC' || value === '+/-' || value === '%' || value === '.' || value === 'C'
+  handleClick = () => ('');
 
   render() {
     const { name, color, wide } = this.props;
