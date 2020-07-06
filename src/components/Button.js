@@ -7,7 +7,7 @@ class Button extends React.Component {
   render() {
     const { name } = this.props;
 
-    let buttonClasses = 'btn btn-outline-secondary button ';
+    let buttonClasses = 'button ';
     buttonClasses += this.isOperator(name) ? '' : 'operator';
 
     return (
