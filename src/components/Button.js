@@ -1,14 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropType from 'prop-types';
 
 class Button extends React.Component {
-  handleClick = () => ('');
+  handleClick = buttonName => {
+    const { clickHandler } = this.props;
+    return clickHandler(buttonName);
+  };
 
   render() {
-    const { name, color, wide } = this.props;
+    const { name = '', color = '', wide = false } = this.props;
 
     return (
       <button
+        onClick={() => this.handleClick(name)}
         type="button"
         className="button"
         style={{
@@ -23,9 +27,16 @@ class Button extends React.Component {
 }
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
-  wide: PropTypes.bool.isRequired,
+  name: PropType.string,
+  color: PropType.string,
+  wide: PropType.bool,
+  clickHandler: PropType.func.isRequired,
+};
+
+Button.defaultProps = {
+  name: '',
+  color: '',
+  wide: false,
 };
 
 export default Button;
