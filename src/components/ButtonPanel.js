@@ -13,8 +13,8 @@ class ButtonPanel extends React.Component {
       <div className="button-panel">
         <div className="row">
           <Button clickHandler={this.handleClick} name="AC" color="#e0e0e0" />
-          <Button clickHandler={this.handleClick} name="+/-" color="#e0e0e0" />
           <Button clickHandler={this.handleClick} name="%" color="#e0e0e0" />
+          <Button clickHandler={this.handleClick} name="+/-" color="#e0e0e0" />
           <Button clickHandler={this.handleClick} name="÷" />
         </div>
 
@@ -22,7 +22,7 @@ class ButtonPanel extends React.Component {
           <Button clickHandler={this.handleClick} name="7" color="#e0e0e0" />
           <Button clickHandler={this.handleClick} name="8" color="#e0e0e0" />
           <Button clickHandler={this.handleClick} name="9" color="#e0e0e0" />
-          <Button clickHandler={this.handleClick} name="X" />
+          <Button clickHandler={this.handleClick} name="x" />
         </div>
 
         <div className="row">
@@ -40,7 +40,7 @@ class ButtonPanel extends React.Component {
         </div>
 
         <div className="row">
-          <Button clickHandler={this.handleClick} name="0" color="#e0e0e0" wide="true" />
+          <Button clickHandler={this.handleClick} name="0" color="#e0e0e0" wide />
           <Button clickHandler={this.handleClick} name="." color="#e0e0e0" />
           <Button clickHandler={this.handleClick} name="=" />
         </div>

@@ -15,8 +15,6 @@ const operate = (numberOne, numberTwo, operation) => {
       return valueOne.mul(valueTwo).toString();
     case '%':
       return valueOne.mod(valueTwo).toString();
-    case '0':
-      return 'Syntax Error';
     default:
       return 0;
   }

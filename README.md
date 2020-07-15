@@ -1,5 +1,7 @@
 This is a simple calculator project designed in React that makes basic calculations
 
+![screenshot](./app_screenshot.png)
+
 ## Live Preview
 
 Open the [live preview](https://sample-react-calc.herokuapp.com/) to view it in the browser.

@@ -1,18 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropType from 'prop-types';
 
-const Display = ({ results = '0', operator = '', next = '' }) => (
+const Display = ({ result, operator, next }) => (
   <button type="button" className="display">
-    { !results ? 0 : results }
-    { operator ? { operator } : '' }
-    { next ? { next } : '' }
+    <p>{!result ? 0 : result}</p>
+    { operator ? <p>{operator}</p> : null}
+    {next ? <p>{next}</p> : null}
   </button>
 );
 
 Display.propTypes = {
-  results: PropTypes.string.isRequired,
-  operator: PropTypes.string.isRequired,
-  next: PropTypes.string.isRequired,
+  result: PropType.string,
+  operator: PropType.string,
+  next: PropType.string,
+};
+
+Display.defaultProps = {
+  result: '0',
+  operator: '',
+  next: '',
 };
 
 export default Display;

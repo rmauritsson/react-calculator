@@ -4,7 +4,6 @@ const calculate = (calculator, buttonName) => {
   let newCalculator = { ...calculator };
   const number = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
   const operator = ['x', '-', '%', '÷', '+'];
-
   if (number.includes(buttonName)) {
     if (!newCalculator.total) {
       newCalculator.total = buttonName;
@@ -42,8 +41,8 @@ const calculate = (calculator, buttonName) => {
     }
   } else if (buttonName === '=') {
     if (newCalculator.total && newCalculator.next) {
-      newCalculator.total = Operate(newCalculator.total, newCalculator.next,
-        newCalculator.operation);
+      newCalculator.total = Operate(newCalculator.total,
+        newCalculator.next, newCalculator.operation);
       newCalculator.next = null;
       newCalculator.operation = null;
     }
