@@ -11,11 +11,15 @@ const calculate = (calculator, buttonName) => {
     } else if (/\.$/g.test(newCalculator.next)) {
       newCalculator.next += buttonName;
     } else if (newCalculator.total && newCalculator.operation) {
-      newCalculator.next = buttonName;
+      if (!newCalculator.next) {
+        newCalculator.next = buttonName;
+      } else {
+        newCalculator.next += buttonName;
+      }
     } else if (/\.$/g.test(newCalculator.total)) {
       newCalculator.total += buttonName;
     } else {
-      newCalculator.total = buttonName;
+      newCalculator.total += buttonName;
     }
   } else if (buttonName === '+/-') {
     if (newCalculator.total) {
